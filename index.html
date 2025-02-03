@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nature's Platter</title>
+
+  <!-- tailwind cdn -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+
+        },
+      }
+    }
+  </script>
+
+  <!-- daisyui cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- google font cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+  <style>
+    .font-sora {
+
+      font-family: "Sora", serif;
+    }
+
+    .hide {
+      display: hide;
+    }
+  </style>
+
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="font-sora">
+
+  <header class="bg-gradient-to-b from-white to-orange-50">
+
+    <!-- nav-bar -->
+    <nav>
+      <div class=" mx-auto md:container md:mx-auto flex items-center pt-6 md:pt-12  max-[640px]:border-b-2  max-[640px]:border-green-600   justify-between ">
+
+        <div>
+          <img class=" hidden md:flex  w-[150px] h-[60px]" src="./c2-assets/logo-header.png" alt="">
+          <img class="md:hidden lg:hidden flex items-center w-[48px] h-[43px] my-7 mx-5 " src="./c2-assets/Group.png" alt="">
+        </div>
+
+        <div class=" hidden lg:flex">
+          <ul class="menu menu-horizontal  px-1 font-normal text-base text-neutral-900">
+            <li><a href="">Product</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact Us</a></li>
+          </ul>
+        </div>
+
+
+        <div class="hidden lg:flex gap-3 items-center">
+          <i class="fa-solid fa-magnifying-glass ml-3 text-black w-[24px]"></i>
+          <i class="fa-solid fa-cart-shopping w-[28px]"></i>
+          <button class="text-neutral-900 text-xl font-normal  border-[1px] border-green-600 px-[30px] py-[8px] rounded-lg"><a href="">Login</a></button>
+          <button class="bg-green-600 text-xl font-normal text-white px-[30px] py-[8px] rounded-lg"><a href="">Register</a></button>
+        </div>
+
+        <div class="dropdown lg:hidden md:hidden">
+          <div tabindex="0" role="button" class=" pr-6 text-green-700  lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+         
+        </div>
+      </div>
+    </nav>
+
+    <!-- banner section -->
+
+    <div class="md:mx-[280px] mt-12 md:mt-20 mb-14 ">
+
+      <!-- content -->
+      <div class=" px-5  md:max-w-[800px]   text-center">
+        <h1 class=" text-3xl md:text-5xl font-semibold text-neutral-900 ">Freshness <span
+            class="text-green-600 font-semibold text-3xl md:text-5xl">You Can <br>Count</span> On, Prices You’ll Love!
+        </h1>
+        <p class="py-6 ">
+          Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered
+          every day!
+        </p>
+
+      </div>
+      <!-- banner image -->
+      <div class=" mt-8">
+        <img class=" md:w-[800px] md:h-[600px]" src="c2-assets/hero-vegetables.png" alt="">
+      </div>
+    </div>
+
+
+  </header>
+
+  <main class="md:container md:mx-auto">
+    <!-- service section -->
+
+    <section class="">
+      <h1 class="font-semibold mt-20 md:mt-32 text-3xl text-green-600 ml-7 md:ml-3">Services</h1>
+      <!-- container -->
+      <div class="grid grid-cols-1 md:grid-cols-3 max-[640px]:ml-7  gap-3">
+        <div class="card mt-5 bg-orange-50 w-[350px] h-[300px] md:w-[400px] md:h-[360px] ">
+
+          <figure class="mx-auto pt-7 pb-3 ">
+            <img class=" 
+          bg-white rounded-full" src="./c2-assets/service.png" class="rounded-xl" />
+          </figure>
+
+          <div class="card-body items-center text-center">
+            <h2 class="card-title font-semibold text-neutral-900 text-2xl">24/7 Services </h2>
+            <p class="font-light text-xl text-neutral-500"> Our dedicated team is available 24/7 to assist you anytime, anywhere </p>
+          </div>
+        </div>
+
+        <div class="card mt-5 bg-orange-50 w-[350px] h-[300px] md:w-[400px] md:h-[360px] ">
+
+          <figure class="mx-auto pt-7 pb-3 ">
+            <img class=" 
+          bg-white rounded-full" src="./c2-assets/delivery.png" class="rounded-xl" />
+          </figure>
+
+          <div class="card-body items-center text-center">
+            <h2 class="card-title font-semibold text-neutral-900 text-2xl">Fast Delivery </h2>
+            <p class="font-light text-xl text-neutral-500">"Get your order delivered quickly with our fast and reliable shipping!" </p>
+          </div>
+        </div>
+
+        <div class="card mt-5 bg-orange-50 w-[350px] h-[340-px] md:w-[400px] md:h-[360px]">
+
+          <figure class="mx-auto pt-12 pb-3 ">
+            <img class=" 
+          bg-white rounded-full" src="./c2-assets/healthy.png" class="rounded-xl" />
+          </figure>
+
+          <div class="card-body items-center text-center">
+            <h2 class="card-title font-semibold text-neutral-900 text-2xl">Healthy Products </h2>
+            <p class="font-light text-xl text-neutral-500">
+              A curated selection of nutritious, organic, and wellness-focused items designed to support a balanced lifestyle, enhance well-being, and promote sustainable living. 🌿💪 </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+
+  </main>
+</body>
+
+</html>
